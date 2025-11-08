@@ -23,7 +23,7 @@
 - 
 
 ## 실습 : RFM segmentation 
-- link :[RFM_데이터_분석_실습](RFM_분석.ipynb)
+- link :[RFM_실습](RFM_분석.ipynb)
 
 
 
