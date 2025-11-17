@@ -1,16 +1,16 @@
 # 데이터 입력
-<p>코딩 테스트에서 데이터를 입력 받을 때 보통 사용하는 방법은 input과 sys.stdin.readline 2가지이다.<p>
-- <p>보통 코딩 테스트의 데이터는 현재 연결된 표준 입력(STDIN) 장치에서 읽어온다<p>
+<p>코딩 테스트에서 데이터를 입력 받을 때 보통 사용하는 방법은 input과 sys.stdin.readline 2가지이다.</p>
+- <p>보통 코딩 테스트의 데이터는 현재 연결된 표준 입력(STDIN) 장치에서 읽어온다</p>
 
 
 # input
-<p>input(prompt, /)<p>
+<p>input(prompt, /)</p>
 - prompt 인자가 입력되면, 표준 출력(화면)에 줄바꿈 없이 내용이 작성됨
 - 그 후 함수는 입력에서 한 줄을 읽어서, 문자열로 변환하여 반환(줄바꿈 문자는 제거)
 - 만약 파일이 끝나서 입력값이 더 이상 없으면 EOFError 발생
   
 ### prompt인자
-<p> prompt 인자는 필수는 아님<p>
+<p> prompt 인자는 필수는 아님</p>
   - prompt가 있을 때
     - 대화형 환경
     - 목적 : 터미널이나 로컬 환경에서 사용자와 상호작용할 때 적합
@@ -22,13 +22,16 @@
     - ex) N = int(input())
       - 작동 : 표준 입력 스트림에서 데이터가 입력되기를 기다림 (코딩 테스트 서버는 이미 데이터 파일이 표준 입력 스트림으로 연결되어 있음)
 
-### readline 모듈
-만약 readline 모듈이 로드되어 있다면, input()은 이 모듈을 사용하여 정교한 라인 편집 및 히스토리 기능을 제공합니다.
-입력을 읽기 전에 builtins.input 감사 이벤트(auditing event)를 prompt 인자와 함께 발생시킵니다.
-입력을 성공적으로 읽은 후 결과와 함께 builtins.input/result 감사 이벤트를 발생시킵니다.
-
 
 # sys.stdin.readline
+### stdin
+- sys 라이브러리(모듈) 내 객체(object) / 함수 아님
+  - 표준 입력 장치와의 연결 통로를 나타내는 객체 (file처럼)
+ 
+### readline
+- sys.stdin 객체에 붙어 있는 기능 - method
+
+
 
 
 ## 비교 (비교적)
@@ -61,4 +64,5 @@
 -----
 ### 출처
 - 파이썬 공식 [3.14.0 Documentation-파이썬 표준 라이브러리](https://docs.python.org/ko/3/library/index.html)
+- 파이썬 공식 문서 [sys-시스템 특정 파라미터와 함수](https://docs.python.org/ko/3/library/sys.html)
 
